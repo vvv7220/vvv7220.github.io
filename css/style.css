@@ -9,11 +9,11 @@ a{
     text-decoration: none;
 }
 .wrapper{
-    width: 1180px;
+    width: 980px;
     margin: auto;
 }
 header{
-    width: 100%;
+    width: 1380px;
     height: 120px;
     background: #f3f3f3;
     border-bottom: 2px solid #ddd;
@@ -32,14 +32,29 @@ margin: 30px 0;
 .top_nav ul{
  display: flex;
  justify-content: center;
- width: 50%;
+ width: 75%;
  float: right;
 letter-spacing: 2px;
+line-height: 0px;
 }
 .top_nav a{
     color: #333333;
     margin-left: 40px; 
     min-width: 50px;
-    /* text-align: center; */
-    /* vertical-align: middle; */
+    font-weight: 400;
+    font-size: 16px; 
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+   }
+   .top_nav li{
+    position: relative;
+   }
+   .top_nav li::after{
+content: "\f107";
+font-family: "Font Awesome 5 Free";
+position: absolute;
+font-weight: 900;
+top: 10%;
+color: #007BCD;
+
+
    }
