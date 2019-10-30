@@ -13,23 +13,36 @@ a{
     margin: auto;
 }
 header{
-    height: 160px;
+    height: 140px;
     background: #f3f3f3;
     border-bottom: 2px solid #ddd;
-    /* margin: auto; */
-    display: flex;
+    margin: auto;
+    width: 100%;
 }
-
+.black_nav{
+    width: 100%;
+    margin: auto;
+    height: 30px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.black_nav span{
+color: #fff;
+}
 .top_nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     height: 70px;
-    align-items: center;
+    align-items: flex-end;
+    margin: 10px 0 10px 0;
 }
 .logowrapp{
     display: flex;
     flex-basis: 400px;
+    flex-grow: 1;  
 }
 .logo{ 
     width: 200px;
@@ -43,6 +56,7 @@ object-fit: cover;
  justify-content: center;
 letter-spacing: 2px;
 flex-basis: 600px;
+flex-grow: 2;
 }
 .top_nav a{
     color: #333333;
@@ -67,6 +81,29 @@ cursor: pointer;
    .top_nav a:hover::after{
     cursor: pointer;
        }
+
+/* Вкладки */
+.tabs_body{
+    width: 100%;
+    min-height: 280px;
+    margin: auto;
+    /* background: rgba(120, 210, 240); */
+    position: absolute;
+    margin-top: 20px;
+}
+.tab-b{
+    min-height: 280px;
+    margin: auto;
+    background: rgba(120, 210, 240);
+    display: none;
+    padding: 20px;
+}
+.tab-b .open{
+    display: block;
+}
+
+
+
 
 
 
