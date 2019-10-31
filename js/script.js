@@ -1,12 +1,14 @@
-let tabLink = document.querySelectorAll('tabLink');
-let tabBody = document.querySelectorAll('tab-b');
-for (let i = 0; i < tabLink.length; i++) {
-    tabLink[i].onclick = openTab;
+let tabLink = document.querySelector('.top_nav ul');
+let tabBody = document.querySelectorAll('.tab-b');
+tabLink.addEventListener('click', fTabs);
+function fTabs (event) {
+    if(event.target.className == 'tabLink'){
+console.log(event);
+let dataTab = event.target.getAttribute('data-tab');
+for(let i = 0; i < tabBody.length; i++){
+if(dataTab == i){
+    tabBody[i].classList.toggle('open');
 }
-function openTab() {
-    for (let k = 0; k <= tabBody; k++) {
-        if (tabLink[i] == tabBody[k]) {
-
-        }
-    }
+}
+}
 }
