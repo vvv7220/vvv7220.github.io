@@ -6,8 +6,17 @@ li{
     list-style: none;
 }
 a{
-    text-decoration: none;
-    
+    text-decoration: none;  
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h3{
+    color: #2c2c2c;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
 }
 .wrapper{
     width: 1180px;
