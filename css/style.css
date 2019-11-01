@@ -30,7 +30,6 @@ header{
     background: #f3f3f3;
     border-bottom: 2px solid #ddd;
     margin: auto;
-    width: 100%;
 }
 .black_nav{
     width: 100%;
@@ -135,6 +134,7 @@ cursor: pointer;
 
     .page{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px auto;
     min-height: 60vh;
@@ -148,8 +148,8 @@ cursor: pointer;
     .leftSide{
         padding: 10px;
         margin: 0 auto;
-        /* background: rgba(120, 210, 240); */
-        flex-basis: calc(100% / 12 * 2);
+        box-shadow: 3px 0px 5px -3px #ccc;
+        flex-basis: calc(100% / 12 * 2 - 40px);
     }
     .infobox{
         padding: 10px;
@@ -160,8 +160,8 @@ cursor: pointer;
     .rightSide{
         padding: 10px;
         margin: 0 auto;
-        /* background: rgba(120, 210, 240); */
-        flex-basis: calc(100% / 12 * 2);
+        box-shadow: -3px 0px 5px -3px #ccc;
+        flex-basis: calc(100% / 12 * 2 - 40px);
     }
 
     footer {
