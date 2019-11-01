@@ -13,6 +13,18 @@ a{
     width: 1180px;
     margin: auto;
 }
+.login{
+    width: 1180px;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.login span{
+ color: #278FD5;
+}
 header{
     height: 140px;
     background: #f3f3f3;
@@ -53,11 +65,12 @@ width: 100%;
 object-fit: cover;
 }
 .top_nav ul{
- display: flex;
- justify-content: center;
-letter-spacing: 2px;
-flex-basis: 600px;
-flex-grow: 2;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    flex-basis: 600px;
+    flex-grow: 2;
+    margin-bottom: 10px;
 }
 .top_nav li{
     color: #333333;
@@ -96,18 +109,16 @@ cursor: pointer;
 .tab-b{
     min-height: 280px;
     margin: auto;
-    background: rgba(120, 210, 240);
+    /* background: rgba(164, 223, 243); */
+    background: #F3F3F3;
     display: none;
     padding: 20px;
+    /* border: 4px double #161618; */
+    box-shadow: 0px 0px 10px 5px #ccc;
 }
 .tab-b.open{
     display: block;
 }
-
-
-
-
-
 
    .page_title h1{
     margin: 0 auto;
@@ -119,9 +130,9 @@ cursor: pointer;
  width: 800px;
    }
    .location{
-       flex-direction: column;
-       text-align: center;
-       /* flex-basis: 300px; */
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
    }
    .banner{
     background: url(../img/volvo-trucks.jpg) top center no-repeat;
@@ -138,11 +149,14 @@ cursor: pointer;
     justify-content: space-around;
     align-items: center;
     }
-    .contacts{
-        flex-basis: 200px;
+    .leftSide{
+        flex-basis: 150px;
     }
     .infobox{
         flex-basis: 800px;
+    }
+    .rightSide{
+        flex-basis: 150px;
     }
 
     footer {
