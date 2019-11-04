@@ -87,12 +87,10 @@ object-fit: cover;
     font-weight: 400;
     font-size: 16px; 
     cursor: pointer;
+    position: relative;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
    }
-   .top_nav li{
-    position: relative;
-   }
-   .top_nav li::after{
+   .tabLink::after{
 content: "\f107";
 font-family: "Font Awesome 5 Free";
 position: absolute;
@@ -121,6 +119,18 @@ cursor: pointer;
     padding: 20px;
     /* border: 4px double #161618; */
     box-shadow: 0px 0px 10px 5px #ccc;
+}
+.tab-b a{
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px; 
+    cursor: pointer;
+    line-height: 16px;
+    #001183
+}
+.tab-b a:hover{
+    color: #001183;
+    text-decoration: underline;
 }
 .tab-b.open{
     display: block;
@@ -165,6 +175,24 @@ cursor: pointer;
         margin: 0 auto;
         flex-basis: calc(100% / 12 * 8);
         /* background:lightblue; */
+    }
+    .infobox h1{
+        text-align: center;
+        color: #161618;
+        margin: 20px auto;
+    }
+    .infobox h3{
+        text-align: left;
+        color: #161618;
+    }
+    .pic{
+        width: 400px;
+        margin: auto;
+    }
+    .pic img{
+        width: 100%;
+        margin: auto;
+        object-fit: cover;
     }
     .rightSide{
         padding: 10px;
