@@ -170,8 +170,20 @@ cursor: pointer;
         margin: 0 auto;
         box-shadow: 3px 0px 5px -3px #ccc;
         flex-basis: calc(100% / 12 * 2 - 40px);
-        /* background: rgba(39, 143, 213, .5); */
     }
+    .rightSide{
+        padding: 10px;
+        margin: 0 auto;
+        box-shadow: -3px 0px 5px -3px #ccc;
+        flex-basis: calc(100% / 12 * 2 - 40px);
+        
+    }
+    .leftSide h3, .rightSide h3{
+        opacity: .2;
+    }
+
+
+
     .infobox{
         padding: 10px;
         margin: 0 auto;
@@ -196,13 +208,7 @@ cursor: pointer;
         margin: auto;
         object-fit: cover;
     }
-    .rightSide{
-        padding: 10px;
-        margin: 0 auto;
-        box-shadow: -3px 0px 5px -3px #ccc;
-        flex-basis: calc(100% / 12 * 2 - 40px);
-        /* background: rgba(39, 143, 213, .5); */
-    }
+    
 
     footer {
         height: 330px;
@@ -225,7 +231,6 @@ cursor: pointer;
     margin-left: 40px; 
     min-width: 20px;
     align-items: center;
-
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
    }
    .volvo{
@@ -246,7 +251,7 @@ cursor: pointer;
     object-fit: cover;
 }
 
-
+/* Галлерея */
 .parallax {
   background: #eff0f1;
   padding: 30px 0px;
@@ -388,4 +393,11 @@ fieldset {
 }
 img {
 	max-width: 100%;
+}
+.note{
+    font-size: 18px;
+    font-weight: 600;
+    color: #f00;
+    background: #fe8d0b;
+    padding: 0 5px;
 }
