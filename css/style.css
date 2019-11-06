@@ -61,6 +61,15 @@ color: #fff;
     align-items: flex-end;
     margin: 10px 0 10px 0;
 }
+.top_nav a{
+    color: #333333;
+    margin-left: 40px; 
+    min-width: 50px;
+    font-weight: 400;
+    font-size: 16px; 
+    cursor: pointer;
+    position: relative; 
+}
 .logowrapp{
     display: flex;
     flex-basis: 400px;
@@ -252,72 +261,23 @@ cursor: pointer;
 }
 
 /* Галлерея */
-.parallax {
-  background: #eff0f1;
-  padding: 30px 0px;
+.gallery{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
-.button {
-	display: inline-block;
-	padding: 5px 12px;
-	background: #fff;
-	border: none;
-	color: #56595a;
-	font-size: 14px;
-	cursor: pointer;
-	margin-bottom: 10px;
+.pic{
+    width: 800px;
+    background: #000000;
+    overflow: hidden;
+    margin: 20px auto;
 }
-.button:hover {
-	color: #00bce4;
+.pic img{
+    max-width: 100%;
+    object-fit: cover;
 }
-.button:active {
-	color: #00bce4;
-	border: none;
-}
-.button:focus {
-	outline: none;
-}
-.btn:focus {
-	outline: none;
-}
-.button.is-checked {
-	color: #00bce4;
-}
-.button-group {
-	max-width: 957px;
-	margin: auto;
-}
-.grid {
-	text-align: center;
-	max-width: 990px;
-	margin: 0px auto;
-}
-.grid:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-.grid-item {
-	padding: 15px;
-	box-sizing: border-box;
-	width: 33.33%;
-	color: #56595a;
-	display: inline;
-}
-.gridContainer {
-	padding: 15px;
-	background-color: #ffffff;
-}
-.grid-item:hover .thumbnail img {
-	-webkit-transfMorgNorm: scale(1.2);
-	-moz-transform: scale(1.2);
-	transform: scale(1.2);
-	opacity: .6;
-}
-.grid-item .thumbnail {
-	background: #000000;
-	overflow: hidden;
-}
-.grid-item .thumbnail img {
+.pic img {
 	display: block;
 	width: calc(100% + 2px);
 	-webkit-transition: all 1.3s linear 0s;
@@ -326,44 +286,11 @@ cursor: pointer;
 	-o-transition: all 1.3s linear 0s;
 	transition: all 1.3s linear 0s;
 }
-.catagory {
-	font-size: 12px;
-	margin: 10px 0px;
-	text-transform: uppercase;
-      color: rgba(112,112,112,0.9);
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
-.maintitle {
-	text-align: center;
-	font-size: 24px;
-	position: relative;
-	margin: 0;
-	width: 100%;
-	color: #b87333;
-}
-fieldset {
-	font-size: 12px;
-	width: 50%;
-	margin: 0 auto 10px auto;
-	padding: 5px 10px;
-	color: #fe8d0b;
-	text-transform: uppercase;
-	border: 1px solid #fe8d0b;
-	-webkit-transition: all .5s linear 0s;
-	-moz-transition: all .5s linear 0s;
-	-ms-transition: all .5s linear 0s;
-	-o-transition: all .5s linear 0s;
-	transition: all .5s linear 0s;
-}
-.grid-item:hover fieldset {
-	color: #fff;
-	border: 1px solid #fff;
-	background-color: #fe8d0b;
-}
-.clear {
-	clear: both;
+.pic:hover img {
+	-webkit-transfMorgNorm: scale(1.2);
+	-moz-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: .6;
 }
 
 @media (max-width: 960px) {
@@ -400,4 +327,102 @@ img {
     color: #f00;
     background: #fe8d0b;
     padding: 0 5px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    {{!cursor}}
+}
+
+
+@media(min-width: 992px) and (max-width: 1200px) {
+    .wrapper{
+        width: 950px;
+        margin: auto;
+    }
+    .login{
+        width: 950px;
+        margin: auto;
+    }
+    .page_title h1.retroshadow {
+        margin: auto;
+    }
+    .logo {
+        width: 85px;
+    }
+    .top_nav ul {
+        flex-grow: 0;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 992px) {
+    .wrapper{
+        width: 735px;
+        margin: auto;
+    }
+    .login{
+        width: 735px;
+        margin: auto;
+    }
+    .page_title h1.retroshadow {
+        margin: auto;
+    }
+    .logo {
+        width: 85px;
+    }
+    .top_nav ul {
+        flex-grow: 0;
+    }
+    .pic {
+        width: 680px;
+    }
+}
+
+
+@media(min-width: 481px) and (max-width: 768px) {
+    header {
+        height: 200px;
+
+    }
+    .wrapper{
+        width: 450px;
+        margin: auto;
+    }
+    .login{
+        width: 450px;
+        margin: auto;
+        display: none;
+    }
+    .page_title h1.retroshadow {
+        margin: auto;
+    }
+    .logo {
+        width: 60px;
+        display: none;
+    }
+    .top_nav ul {
+        flex-grow: 0;
+        margin: 25px auto;
+        display: none;
+    }
+    .pic {
+        width: 500px;
+    }
+
+    .top_nav a{
+        margin-left: 20px; 
+        min-width: 50px;
+        font-size: 14px;
+    }
+
+    .top_nav li{
+        margin-left: 20px; 
+        min-width: 50px;
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
+    {{!cursor}}
 }
