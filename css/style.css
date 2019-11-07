@@ -178,13 +178,19 @@ cursor: pointer;
         padding: 10px;
         margin: 0 auto;
         box-shadow: 3px 0px 5px -3px #ccc;
-        flex-basis: calc(100% / 12 * 2 - 40px);
+        /* flex-basis: calc(100% / 12 * 2 - 40px); */
+        width: 160px;
+        background: lightblue;
+        flex-grow: 1;
     }
     .rightSide{
+       width: 160px;
         padding: 10px;
         margin: 0 auto;
         box-shadow: -3px 0px 5px -3px #ccc;
-        flex-basis: calc(100% / 12 * 2 - 40px);
+        /* flex-basis: calc(100% / 12 * 2 - 40px); */
+        background: lightblue;
+        flex-grow: 1;
         
     }
     .leftSide h3, .rightSide h3{
@@ -196,8 +202,9 @@ cursor: pointer;
     .infobox{
         padding: 10px;
         margin: 0 auto;
-        flex-basis: calc(100% / 12 * 8);
+        /* flex-basis: calc(100% / 12 * 8); */
         /* background:lightblue; */
+        flex-grow: 0;
     }
     .infobox h1{
         text-align: center;
@@ -403,23 +410,20 @@ img {
     }
     .top_nav ul {
         flex-grow: 0;
-        margin: 25px auto;
-        display: none;
+        margin: 25px auto;;
     }
     .pic {
-        width: 500px;
+        width: 420px;
     }
 
     .top_nav a{
-        margin-left: 20px; 
-        min-width: 50px;
-        font-size: 14px;
+        font-size: 12px;
+        margin: 0 10px;
     }
 
     .top_nav li{
-        margin-left: 20px; 
-        min-width: 50px;
-        font-size: 14px;
+        font-size: 12px;
+        margin: 0 10px;
     }
 }
 
