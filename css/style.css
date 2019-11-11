@@ -36,23 +36,12 @@ h3{
  color: #278FD5;
 }
 header{
-    height: 140px;
+    min-height: 140px;
     background: #f3f3f3;
     border-bottom: 2px solid #ddd;
     margin: auto;
 }
-.black_nav{
-    width: 100%;
-    margin: auto;
-    height: 30px;
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.black_nav span{
-color: #fff;
-}
+
 .top_nav{
     display: flex;
     flex-wrap: wrap;
@@ -270,7 +259,61 @@ cursor: pointer;
 /* Humburger menu */
 .hum{
     display: flex;
-
+}
+.hum_btn{
+    border-radius: 5%;
+    width: 25px;
+    height: 25px;
+    background: #278FD5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+span.span_btn{
+    width: 10px;
+    height: 2px;
+    display: block;
+    margin: 2px auto;
+    background: #161618;
+}
+/* Мобильное меню */
+.black_nav{
+    width: 100%;
+    margin: auto;
+    min-height: 50px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.black_nav span{
+color: #fff;
+}
+.mobMenu ul{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+width: 100%;
+min-height: 400px;
+background: #fff;
+padding: 10px;
+}
+.mobMenu li{
+    flex-basis: calc(100% / 5);
+    border-bottom: 1px solid #161618;
+    width: 100%;
+}
+.mobMenu a{
+padding: 16px 32px;
+text-align: center;
+font-size: 18px;
+line-height: 75px;
+color: #7D7D7D;
+}
+.showMenu {
+    display: block;
 }
 
 /* Галлерея */
@@ -459,6 +502,7 @@ img {
     }
     .top_nav ul {
         flex-direction: column;
+        justify-content: center;
     }
     .pic {
         width: 420px;
@@ -473,5 +517,9 @@ img {
         font-size: 12px;
         margin: 0 10px;
     }
-    
+    .hum_btn{
+        display: flex;
+        position: absolute;
+        left: 0;
+    }
 }
