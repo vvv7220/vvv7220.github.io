@@ -267,6 +267,12 @@ cursor: pointer;
     object-fit: cover;
 }
 
+/* Humburger menu */
+.hum{
+    display: flex;
+
+}
+
 /* Галлерея */
 .gallery{
     width: 100%;
@@ -428,5 +434,44 @@ img {
 }
 
 @media(min-width: 320px) and (max-width: 480px) {
-    {{!cursor}}
+    header {
+        height: 200px;
+
+    }
+    .wrapper{
+        width: 450px;
+        margin: auto;
+    }
+    .login{
+        width: 450px;
+        margin: auto;
+        display: none;
+    }
+    .page_title h1.retroshadow {
+        margin: auto;
+    }
+    .logowrapp{
+        flex-direction: column;
+    }
+    .logo {
+        width: 60px;
+        /* display: none; */
+    }
+    .top_nav ul {
+        flex-direction: column;
+    }
+    .pic {
+        width: 420px;
+    }
+
+    .top_nav a{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+
+    .top_nav li{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    
 }
