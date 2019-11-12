@@ -46,7 +46,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 70px;
+    height: 100px;
     align-items: flex-end;
     margin: 10px 0 10px 0;
 }
@@ -109,6 +109,7 @@ cursor: pointer;
     margin: auto;
     position: absolute;
     margin-top: 20px;
+    z-index: 999;
 }
 .tab-b{
     min-height: 280px;
@@ -220,6 +221,7 @@ cursor: pointer;
         text-align: center;
         background: #161618;
         margin: 0 auto;
+        /* padding: 20px; */
     }
 .footer_content{
     display: flex;
@@ -256,19 +258,9 @@ cursor: pointer;
     object-fit: cover;
 }
 
-/* Humburger menu */
-.hum{
-    display: flex;
-}
-.hum_btn{
-    border-radius: 5%;
-    width: 25px;
-    height: 25px;
-    background: #278FD5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Hamburger menu */
+.ham_btn{
+    display: none;
 }
 span.span_btn{
     width: 10px;
@@ -290,6 +282,7 @@ span.span_btn{
 .black_nav span{
 color: #fff;
 }
+
 .mobMenu ul{
 display: flex;
 flex-direction: column;
@@ -477,12 +470,18 @@ img {
 }
 
 @media(min-width: 320px) and (max-width: 480px) {
+    ul.tabs{
+        display: none;
+    }
+    .ham_btn{
+        display: block;
+    }
     header {
         height: 200px;
 
     }
     .wrapper{
-        width: 450px;
+        width: 320px;
         margin: auto;
     }
     .login{
@@ -521,5 +520,13 @@ img {
         display: flex;
         position: absolute;
         left: 0;
+    }
+    .footer-nav a{
+        margin-left: 10px; 
+        min-width: 20px;
+        color: darkcyan;
+       }
+       .volvo span{
+        color: darkcyan;
     }
 }

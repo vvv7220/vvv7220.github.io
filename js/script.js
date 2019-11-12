@@ -17,3 +17,17 @@ function fTabs(event) {
     }
 }
 
+
+Mmenu.configs.classNames.selected = "active";
+            Mmenu.configs.offCanvas.page.selector = "#my-page";
+            Mmenu.configs.classNames.vertical = "expand";
+
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    const menu = new Mmenu( "#my-menu", {
+                        slidingSubmenus: false,
+                        vertical: "expand",
+                        // extensions: ["theme-dark"]
+                    });
+                }
+            );

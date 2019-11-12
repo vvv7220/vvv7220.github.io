@@ -11,155 +11,178 @@
     <link rel="stylesheet" href="css/text.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/hamburgers.css">
+        <link rel="stylesheet" href="css/mmenu.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+
 </head>
 
 <body>
-    <header>
-        <div class="black_nav">
-            <!-- Кнопка гамбургер начало -->
-            <div class="hum_btn">
-                <span class="span_btn"></span>
-                <span class="span_btn"></span>
-                <span class="span_btn"></span>
+    <div id="my-page">
+        <header>
+            <div class="black_nav">
+                <!-- Кнопка гамбургер начало -->
+                <div class="ham_btn">
+                    <a href="#my-menu" class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Кнопка гамбургер конец -->
             </div>
-            <!-- Кнопка гамбургер конец -->
-            <nav class="mobMenu">
+            <div class="wrapper">
+                <div class="login"><span>Войти на форум</span></div>
+                <nav class="top_nav">
+                    <div class="logowrapp">
+                        <div class="logo"><img src="img/volvoLogo_mini.png" alt=""></div>
+                        <div class="location">
+                            <h3>Volvo Trucks Service</h3><span>Сайт в помощь по ремонту и обслуживанию грузовых
+                                автомобилей
+                                Вольво</span>
+                        </div>
+                    </div>
+                    <ul class="tabs">
+                        <li class="simpleLink"><a href="index.html" target="_blank"> Главная</a></li>
+                        <li class="tabLink" data-tab="1">Ремонты</li>
+                        <li class="tabLink" data-tab="2">Документы</li>
+                        <li class="tabLink" data-tab="3">Видео</li>
+                        <li class="tabLink" data-tab="4">Фотогаллерея</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="tabs_body">
+                <div class="tab-b">
+                    <p>
+                        Своевременное обслуживание Volvo максимально увеличивает Ваше время работы без простоев и
+                        снижает
+                        риск
+                        незапланированных визитов в мастерскую. Индивидуальные планы обслуживания для каждого грузовика
+                        гарантируют, что правильное обслуживание проводится именно тогда, когда необходимо.</p>
+                </div>
+                <div class="tab-b">
+                    <ul>
+                        <li><a href="">Замена втулки передней рессоры</a></li>
+                        <li><a href="">Замена подушки на прицепе</a></li>
+                        <li><a href="">Замена пыльника тормозов задний мост</a></li>
+                        <li><a href="brakes.html" target="_blank">Замена тормозных накладок</a></li>
+                        <li><a href="">Замена стаб. каб_2-й способ</a></li>
+                        <li><a href="">Замена стабилизатора кабины</a></li>
+                        <li><a href="">ТО</a></li>
+                    </ul>
+                </div>
+                <div class="tab-b">
+                    <h3>Документация</h3>
+                </div>
+                <div class="tab-b">
+                    <h3>Видео</h3>
+                </div>
+                <div class="tab-b">
+                    <h3>Фотогаллерея</h3>
+                </div>
+
+            </div>
+
+
+
+            <nav id="my-menu">
                 <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Ремонты</a></li>
+                    <li class="active"><a href="">Главная</a></li>
+                    <li><span>Ремонты</span>
+                        <ul class="Vertical">
+                            <li><a href="">Замена втулки передней рессоры</a></li>
+                            <li><a href="">Замена подушки на прицепе</a></li>
+                            <li><a href="">Замена пыльника тормозов задний мост</a></li>
+                            <li><a href="brakes.html" target="_blank">Замена тормозных накладок</a></li>
+                            <li><a href="">Замена стаб. каб_2-й способ</a></li>
+                            <li><a href="">Замена стабилизатора кабины</a></li>
+                            <li><a href="">ТО</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">Документы</a></li>
                     <li><a href="">Видео</a></li>
                     <li><a href="">Фотогаллерея</a></li>
                 </ul>
             </nav>
-        </div>
+        </header>
         <div class="wrapper">
-            <div class="login"><span>Войти на форум</span></div>
-            <nav class="top_nav">
-                <div class="logowrapp">
-                    <div class="logo"><img src="img/volvoLogo_mini.png" alt=""></div>
-                    <div class="location">
-                        <h3>Volvo Trucks Service</h3><span>Сайт в помощь по ремонту и обслуживанию грузовых автомобилей
-                            Вольво</span>
-                    </div>
+            <div class="page_title">
+                <h1 class="retroshadow">Volvo Truck Service</h1>
+            </div>
+        </div>
+        <div class="banner">
+
+        </div>
+
+        <div class="wrapper">
+            <section class="page">
+                <div class="leftSide">
+                    <h3>Реклама</h3>
                 </div>
-                <ul class="tabs">
-                    <li class="simpleLink"><a href="index.html" target="_blank"> Главная</a></li>
-                    <li class="tabLink" data-tab="1">Ремонты</li>
-                    <li class="tabLink" data-tab="2">Документы</li>
-                    <li class="tabLink" data-tab="3">Видео</li>
-                    <li class="tabLink" data-tab="4">Фотогаллерея</li>
-                </ul>
-            </nav>
+                <div class="infobox">
+                    <h1>Замена накладок тормозных колодок в круг</h1>
+                    <p>
+                        <h3>Время выполнения:</h3> 16 часов.
+                    </p>
 
+                    <h3>Инструмент: </h3>
+                    <ol class="rounded">
+                        <li>Кронциркуль для снятия колодок</li>
+                        <li>Домкрат</li>
+                        <li>Ключ баллоный *33</li>
+                        <li>Ключ торцовый или головка *10</li>
+                        <li>Ключ торцовый или головка *24</li>
+                        <li>Клещи(Пассатижи)</li>
+                        <li>Стамеска(острая отвёртка)</li>
+                        <li>Спец ключ звёздочка *?</li>
+                        <li>Расклёпочное оборудование</li>
+                    </ol>
+                    <h3>Порядок действий: </h3>
+                    <ol class="rounded">
+                        <li>Поставить противооткаты</li>
+                        <li>Накачать воздух</li>
+                        <li>Поставить на ручник</li>
+                        <li>Выкрутить винт - ось энергоаккумулятора. Головка *24</li>
+                        <li>Поддомкратить машину</li>
+                        <li>Открутить гайки крепления колеса. Ключ баллоный *33. Снять колесо</li>
+                        <li>Открутить два винта крепления тормозного барабана. Снять барабан.</li>
+                        <li>Разжать пружину кронциркулем. Вытащить пальцы крепления колодок.</li>
+                        <li>Снять колодки</li>
+                        <li>Переклепать накладки на расклёпочном оборудование</li>
+                        <li>Установить колодки на место</li>
+                        <li>Свести колодки. Ключ торцовый *10. Крутить по ходу машины</li>
+                        <li>Выровнять колодки </li>
+                        <li>Установить тормозной барабан на место. Закрутить два винта крепления</li>
+                        <li>Развести колодки. Крутить по заднему ходу машины</li>
+                        <li>Поставить колесо и затянуть. Момент затяжки 650 N·m</li>
+                        <li>Отрегулировать тормоза: <br>
+                            <span class="note">Минимальная толщина накладки 6мм. Меньше 6мм накладка на колодку подлежит
+                                замене. При регулировке, накладка должна прилегать к барабану. Зазора быть не
+                                должно!!!</span> <br>
+                            <b>Развести колодки до конца. Пока колесо перестанет крутиться</b> <br>
+                            <b> Открутить винт несколько оборотов в обратную сторону, пока колесо не станет крутиться.
+                                Крутим колесо рукой и отпускаем. После этого колесо должно немного (10 - 20 см)
+                                прокрутится
+                                по иннерции</b>
+                            <br>
+                            <b style="color: red;"> Закрутить винт - ось энергоаккумуляторов. Головка *24 !!!</b>
+
+                    </ol>
+                    <h3>Полезные ссылки по теме:</h3>
+                    <a href="https://www.youtube.com/watch?v=1avpoKe8W_o">Если нет кронциркуля для снятия
+                        колодок</a>
+                </div>
+
+                <div class="rightSide">
+                    <h3>Реклама</h3>
+
+
+
+                </div>
         </div>
-        <div class="tabs_body">
-            <div class="tab-b">
-                <p>
-                    Своевременное обслуживание Volvo максимально увеличивает Ваше время работы без простоев и снижает
-                    риск
-                    незапланированных визитов в мастерскую. Индивидуальные планы обслуживания для каждого грузовика
-                    гарантируют, что правильное обслуживание проводится именно тогда, когда необходимо.</p>
-            </div>
-            <div class="tab-b">
-                <ul>
-                    <li><a href="">Замена втулки передней рессоры</a></li>
-                    <li><a href="">Замена подушки на прицепе</a></li>
-                    <li><a href="">Замена пыльника тормозов задний мост</a></li>
-                    <li><a href="">Замена тормозных колодок</a></li>
-                    <li><a href="">Замена стаб. каб_2-й способ</a></li>
-                    <li><a href="">Замена стабилизатора кабины</a></li>
-                    <li><a href="">ТО</a></li>
-                </ul>
-            </div>
-            <div class="tab-b">
-                <h3>Документация</h3>
-            </div>
-            <div class="tab-b">
-                <h3>Видео</h3>
-            </div>
-            <div class="tab-b">
-                <h3>Фотогаллерея</h3>
-            </div>
 
-        </div>
-    </header>
-    <div class="wrapper">
-        <div class="page_title">
-            <h1 class="retroshadow">Volvo Truck Service</h1>
-        </div>
-    </div>
-    <div class="banner">
-
-    </div>
-
-    <div class="wrapper">
-        <section class="page">
-            <div class="leftSide">
-                <h3>Реклама</h3>
-            </div>
-            <div class="infobox">
-                <h1>Замена накладок тормозных колодок в круг</h1>
-                <p>
-                    <h3>Время выполнения:</h3> 16 часов.
-                </p>
-
-                <h3>Инструмент: </h3>
-                <ol class="rounded">
-                    <li>Кронциркуль для снятия колодок</li>
-                    <li>Домкрат</li>
-                    <li>Ключ баллоный *33</li>
-                    <li>Ключ торцовый или головка *10</li>
-                    <li>Ключ торцовый или головка *24</li>
-                    <li>Клещи(Пассатижи)</li>
-                    <li>Стамеска(острая отвёртка)</li>
-                    <li>Спец ключ звёздочка *?</li>
-                    <li>Расклёпочное оборудование</li>
-                </ol>
-                <h3>Порядок действий: </h3>
-                <ol class="rounded">
-                    <li>Поставить противооткаты</li>
-                    <li>Накачать воздух</li>
-                    <li>Поставить на ручник</li>
-                    <li>Выкрутить винт - ось энергоаккумулятора. Головка *24</li>
-                    <li>Поддомкратить машину</li>
-                    <li>Открутить гайки крепления колеса. Ключ баллоный *33. Снять колесо</li>
-                    <li>Открутить два винта крепления тормозного барабана. Снять барабан.</li>
-                    <li>Разжать пружину кронциркулем. Вытащить пальцы крепления колодок.</li>
-                    <li>Снять колодки</li>
-                    <li>Переклепать накладки на расклёпочном оборудование</li>
-                    <li>Установить колодки на место</li>
-                    <li>Свести колодки. Ключ торцовый *10. Крутить по ходу машины</li>
-                    <li>Выровнять колодки </li>
-                    <li>Установить тормозной барабан на место. Закрутить два винта крепления</li>
-                    <li>Развести колодки. Крутить по заднему ходу машины</li>
-                    <li>Поставить колесо и затянуть. Момент затяжки 650 N·m</li>
-                    <li>Отрегулировать тормоза: <br>
-                        <span class="note">Минимальная толщина накладки 6мм. Меньше 6мм накладка на колодку подлежит
-                            замене. При регулировке, накладка должна прилегать к барабану. Зазора быть не
-                            должно!!!</span> <br>
-                        <b>Развести колодки до конца. Пока колесо перестанет крутиться</b> <br>
-                        <b> Открутить винт несколько оборотов в обратную сторону, пока колесо не станет крутиться.
-                            Крутим колесо рукой и отпускаем. После этого колесо должно немного (10 - 20 см) прокрутится
-                            по иннерции</b>
-                        <br>
-                        <b style="color: red;"> Закрутить винт - ось энергоаккумуляторов. Головка *24 !!!</b>
-
-                </ol>
-                <h3>Полезные ссылки по теме:</h3>
-                <a href="https://www.youtube.com/watch?v=1avpoKe8W_o">Если нет кронциркуля для снятия
-                    колодок</a>
-            </div>
-
-            <div class="rightSide">
-                <h3>Реклама</h3>
-
-
-
-            </div>
-    </div>
-
-    </section>
+        </section>
     </div>
     <section class="gallery">
         <div class="pic">
@@ -208,9 +231,26 @@
 
 
     </footer>
+    </div>
+    <script src="js/mmenu.js"></script>
     <script src="js/fontawesome/all.js "></script>
+    <script src="js/mmenu.js"></script>
     <script src="js/script.js"></script>
+    <!-- <script>
+            Mmenu.configs.classNames.selected = "active";
+            Mmenu.configs.offCanvas.page.selector = "#my-page";
+            Mmenu.configs.classNames.vertical = "expand";
 
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    const menu = new Mmenu( "#my-menu", {
+                        slidingSubmenus: false,
+                        vertical: "expand",
+                        // extensions: ["theme-dark"]
+                    });
+                }
+            );
+        </script> -->
 </body>
 
 </html>
