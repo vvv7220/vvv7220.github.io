@@ -21,20 +21,18 @@ function fTabs(event) {
 Mmenu.configs.classNames.selected = "active";
 Mmenu.configs.offCanvas.page.selector = "#my-page";
 Mmenu.configs.classNames.vertical = "expand";
-
 document.addEventListener(
     "DOMContentLoaded", () => {
-        const menu = new Mmenu("#my-menu", {
-            slidingSubmenus: false,
-            vertical: "expand",
-            // extensions: ["theme-dark"]
+        new Mmenu( "#my-menu", {
+            hooks: {
+                // "openPanel:start": ( panel ) => {
+                //     console.log( "Started opening pane: " + panel.id );
+                // },
+                "openPanel:finish": ( panel ) => {
+                    $('.hamburger').addClass('is-active');
+                    console.log( "Finished opening panel: " + panel.id );
+                }
+            }
         });
     }
-);
-
-
-let api = menu.API;
-api.bind("openPanel:finish", function (panel) {
-    $('.hamburger').addClass('is-active');
-}
 );
