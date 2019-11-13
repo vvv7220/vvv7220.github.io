@@ -5,10 +5,11 @@ menu_btn.addEventListener('click', function () {
     menu.classList.toggle('open_menu');
     if (menu.classList.contains('open_menu')) {
         hamburger.classList.add('is-active');
-        menu_btn.classList.toggle('moveLeft');
+        menu_btn.classList.add('moveLeft');
     }
     else {
         hamburger.classList.remove('is-active');
+        menu_btn.classList.remove('moveLeft');
 
     }
 });

@@ -276,9 +276,6 @@ span.span_btn{
     margin: auto;
     min-height: 50px;
     background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 .black_nav span{
 color: #fff;
