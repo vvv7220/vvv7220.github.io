@@ -15,28 +15,30 @@ li{
     list-style: none;
 }
 #menu{
-    width: 350px;
+    width: 270px;
     height: 100vh;
     background: #f3f3f3;
     padding: 20px;
     position: fixed;
-    left: -330px;
+    left: -270px;
     top: 0;
     display: none;
 }
 #menu li{
 padding: 16px 32px;
 border-bottom: 1px solid #333;
-
 } 
-
+.burger_menu.moveLeft{
+    left: 190px;
+}
 /* Меню от Лущенко */
 #menu.open_menu{
     left: 0;
 }
 .burger_menu{
-display: flex;
-justify-content: flex-end;
+position: relative;
+left: 270px;
+top: 0;
 }
 
 @media(min-width: 320px) and (max-width: 480px) {
