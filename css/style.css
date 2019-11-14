@@ -483,8 +483,6 @@ img {
         margin: auto;
     }
     .login{
-        width: 450px;
-        margin: auto;
         display: none;
     }
     .page_title h1.retroshadow {
@@ -502,7 +500,8 @@ img {
         justify-content: center;
     }
     .pic {
-        width: 420px;
+        width: 267px;
+}
     }
 
     .top_nav a{

@@ -49,15 +49,33 @@ display: none;
     .burger_menu{
         display: block;
         }
+    .wrapper{
+        width: 320px;
+        margin: auto;
+    }
+
 }
 
 @media(min-width: 120px) and (max-width: 320px) {
     #menu{
         display: block;
     }
+    .wrapper{
+        width: 120px;
+    }
     .burger_menu{
         display: block;
         }
+
+        .pic {
+            width: 267px;
+    }
+    ul.tabs{
+        display: none;
+    }
+    .page_title h1 {
+        font-size: 35px;
+    }
 }
 
 
