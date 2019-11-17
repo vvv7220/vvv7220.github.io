@@ -1,0 +1,7 @@
+
+#menu li ul {
+    display: none;
+    }
+#menu li:hover ul, #m_body li.over ul {
+    display: block;
+    }

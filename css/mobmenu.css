@@ -14,6 +14,9 @@ a:hover{
 li{
     list-style: none;
 }
+.vert li.shw{
+    display: block;
+}
 #menu{
     width: 270px;
     height: 100vh;
@@ -23,6 +26,15 @@ li{
     left: -270px;
     top: 0;
     display: none;
+    overflow: scroll;
+}
+#menu span{
+    color: #333;
+    font-weight: 600;
+}
+#menu span:hover{
+    color: #0FC0FC;
+    
 }
 #menu li{
 padding: 16px 32px;
@@ -42,6 +54,8 @@ top: 0;
 display: none;
 }
 
+
+
 @media(min-width: 320px) and (max-width: 480px) {
     #menu{
         display: block;
@@ -53,7 +67,17 @@ display: none;
         width: 320px;
         margin: auto;
     }
-
+    .vert{
+        display: none;
+    }
+    /*  
+    .repair:focus ~ .vert, 
+    .repair:active ~ .vert, 
+    .vert:hover 
+    { 
+       display: block; 
+    }  */
+    
 }
 
 @media(min-width: 120px) and (max-width: 320px) {
@@ -76,6 +100,17 @@ display: none;
     .page_title h1 {
         font-size: 35px;
     }
+    .vert{
+        display: none;
+    } 
+  
+    /* .repair:focus ~ .vert, 
+    .repair:active ~ .vert, 
+    .vert:hover 
+    { 
+       display: block; 
+    }  */
+    
 }
 
 
