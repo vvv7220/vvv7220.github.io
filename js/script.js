@@ -18,21 +18,21 @@ function fTabs(event) {
 }
 
 
-Mmenu.configs.classNames.selected = "active";
-Mmenu.configs.offCanvas.page.selector = "#my-page";
-Mmenu.configs.classNames.vertical = "expand";
-document.addEventListener(
-    "DOMContentLoaded", () => {
-        new Mmenu( "#my-menu", {
-            hooks: {
-                // "openPanel:start": ( panel ) => {
-                //     console.log( "Started opening pane: " + panel.id );
-                // },
-                "openPanel:finish": ( panel ) => {
-                    $('.hamburger').addClass('is-active');
-                    console.log( "Finished opening panel: " + panel.id );
-                }
-            }
-        });
-    }
-);
+// Mmenu.configs.classNames.selected = "active";
+// Mmenu.configs.offCanvas.page.selector = "#my-page";
+// Mmenu.configs.classNames.vertical = "expand";
+// document.addEventListener(
+//     "DOMContentLoaded", () => {
+//         new Mmenu( "#my-menu", {
+//             hooks: {
+//                 // "openPanel:start": ( panel ) => {
+//                 //     console.log( "Started opening pane: " + panel.id );
+//                 // },
+//                 "openPanel:finish": ( panel ) => {
+//                     $('.hamburger').addClass('is-active');
+//                     console.log( "Finished opening panel: " + panel.id );
+//                 }
+//             }
+//         });
+//     }
+// );

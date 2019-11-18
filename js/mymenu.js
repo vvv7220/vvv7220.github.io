@@ -1,4 +1,4 @@
-var m_id = new Array('s_mn_1','s_mn_2','s_mn_3');
+let m_id = new Array('s_mn_1','s_mn_2','s_mn_3','s_mn_4','s_mn_5');
 listStart = function allclose() {
   for (i=0; i < m_id.length; i++){
   document.getElementById(m_id[i]).style.display = "none";

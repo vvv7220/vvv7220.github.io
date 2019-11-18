@@ -14,9 +14,15 @@ a:hover{
 li{
     list-style: none;
 }
-.vert li.shw{
+
+/* Мобильное выпадающее меню Начало */
+#menu li ul {
+    display: none;
+    }
+#menu li:hover ul, #m_body li.over ul {
     display: block;
-}
+    }
+
 #menu{
     width: 270px;
     height: 100vh;
@@ -28,16 +34,16 @@ li{
     display: none;
     overflow: scroll;
 }
-#menu span{
-    color: #333;
+#menu a{
+    color:  #0FC0FC;;
     font-weight: 600;
 }
-#menu span:hover{
-    color: #0FC0FC;
+#menu a:hover{
+    color: darkslateblue;
     
 }
 #menu li{
-padding: 16px 32px;
+padding: 16px 25px;
 border-bottom: 1px solid #333;
 } 
 .burger_menu.moveLeft{
@@ -53,8 +59,7 @@ left: 0;
 top: 0;
 display: none;
 }
-
-
+/* Мобильное выпадающее меню Конец */
 
 @media(min-width: 320px) and (max-width: 480px) {
     #menu{
@@ -67,19 +72,7 @@ display: none;
         width: 320px;
         margin: auto;
     }
-    .vert{
-        display: none;
-    }
-    /*  
-    .repair:focus ~ .vert, 
-    .repair:active ~ .vert, 
-    .vert:hover 
-    { 
-       display: block; 
-    }  */
-    
 }
-
 @media(min-width: 120px) and (max-width: 320px) {
     #menu{
         display: block;
@@ -92,7 +85,7 @@ display: none;
         }
 
         .pic {
-            width: 267px;
+            width: 180px;
     }
     ul.tabs{
         display: none;
@@ -100,17 +93,6 @@ display: none;
     .page_title h1 {
         font-size: 35px;
     }
-    .vert{
-        display: none;
-    } 
-  
-    /* .repair:focus ~ .vert, 
-    .repair:active ~ .vert, 
-    .vert:hover 
-    { 
-       display: block; 
-    }  */
-    
 }
 
 
