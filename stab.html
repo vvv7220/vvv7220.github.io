@@ -1,14 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
     <title>Замена стабилизатора кабины</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <!-- <link rel="stylesheet" href="css/mymenu.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobmenu.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="black_nav">
+            <!-- Мобильное меню Start -->
+            <div class="burger_menu">
+                <button class="hamburger hamburger--arrowalt" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="" onclick="menuOpen('s_mn_1');return(false)">Ремонты</a>
+                        <ul id="s_mn_1">
+                            <li><a href="">Замена втулки передней рессоры</a></li>
+                            <li><a href="">Замена задних подушек крепления двигателя</a></li>
+                            <li><a href="">Регулировка клапанов двигателя</a></li>
+                            <li><a href="">Замена подушки на прицепе</a></li>
+                            <li><a href="">Замена пыльника тормозов задний мост</a></li>
+                            <li><a href="brakes.html" target="_blank">Замена тормозных накладок</a></li>
+                            <li><a href="stab.html">Замена втулок стабилизатора кабины</a></li>
+                            <li><a href="">ТО</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="" onclick="menuOpen('s_mn_2');return(false)">Документы</a>
+                        <ul id="s_mn_2">
+                            <li><a href="">Подпункт меню №1</a></li>
+                            <li><a href="">Подпункт меню №2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="" onclick="menuOpen('s_mn_3');return(false)">Видео</a>
+                        <ul id="s_mn_3">
+                            <li><a href="">Подпункт меню №1</a></li>
+                            <li><a href="">Подпункт меню №2</a></li>
+                            <li><a href="">Подпункт меню №3</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="" onclick="menuOpen('s_mn_4');return(false)">Фотогаллерея</a>
+                        <ul id="s_mn_4">
+                            <li><a href="">Подпункт меню №1</a></li>
+                            <li><a href="">Подпункт меню №2</a></li>
+                            <li><a href="">Подпункт меню №3</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="" onclick="menuOpen('s_mn_5');return(false)">Полезные ресурсы</a>
+                        <ul id="s_mn_5">
+                            <li><a href="">Подпункт меню №1</a></li>
+                            <li><a href="">Подпункт меню №2</a></li>
+                            <li><a href="">Подпункт меню №3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Мобильное меню End -->
+        </div>
+        <div class="wrapper">
+            <div class="login"><span>Войти на форум</span></div>
+            <nav class="top_nav">
+                <div class="logowrapp">
+                    <div class="logo"><img src="img/volvoLogo_mini.png" alt=""></div>
+                    <div class="location">
+                        <h3>Volvo Trucks Service</h3><span>Сайт в помощь по ремонту и обслуживанию грузовых автомобилей
+                            Вольво</span>
+                    </div>
+                </div>
+                <ul class="tabs">
+                    <li class="simpleLink"><a href="index.html" target="_blank"> Главная</a></li>
+                    <li class="tabLink" data-tab="1">Ремонты</li>
+                    <li class="tabLink" data-tab="2">Документы</li>
+                    <li class="tabLink" data-tab="3">Видео</li>
+                    <li class="tabLink" data-tab="4">Фотогаллерея</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tabs_body">
+            <div class="tab-b">
+                <p>
+                    Своевременное обслуживание Volvo максимально увеличивает Ваше время работы без простоев и снижает
+                    риск
+                    незапланированных визитов в мастерскую. Индивидуальные планы обслуживания для каждого грузовика
+                    гарантируют, что правильное обслуживание проводится именно тогда, когда необходимо.</p>
+            </div>
+            <div class="tab-b">
+                <ul>
+                    <li><a href="">Замена втулки передней рессоры</a></li>
+                    <li><a href="">Замена задних подушек крепления двигателя</a></li>
+                    <li><a href="">Регулировка клапанов двигателя</a></li>
+                    <li><a href="">Замена подушки на прицепе</a></li>
+                    <li><a href="">Замена пыльника тормозов задний мост</a></li>
+                    <li><a href="brakes.html" target="_blank">Замена тормозных накладок</a></li>
+                    <li><a href="stab.html">Замена втулок стабилизатора кабины</a></li>
+                    <li><a href="">ТО</a></li>
+                </ul>
+            </div>
+            <div class="tab-b">
+                <h3>Документация</h3>
+            </div>
+            <div class="tab-b">
+                <h3>Видео</h3>
+            </div>
+            <div class="tab-b">
+                <h3>Фотогаллерея</h3>
+            </div>
+
+        </div>
+    </header>
+    <!-- Контент Начало -->
+    <div class="wrapper">
+        <div class="page_title">
+            <h1 class="retroshadow">Volvo Truck Service</h1>
+        </div>
+    </div>
+    <div class="banner">
+
+    </div>
+
+    <div class="wrapper">
+        <section class="page">
+            <div class="leftSide">
+                <h3>Реклама</h3>
+            </div>
+            <div class="infobox">
+                <h1>Замена втулок стабилизатора кабины</h1>
+                <p>
+                    <h3>Время выполнения:</h3> ? часов.
+                </p>
+
+                <h3>Инструмент: </h3>
+                <ol class="rounded">
+                    <li>Кран балка</li>
+                    <li>Домкрат</li>
+                    <li>Ключ *21</li>
+                    <li>Ключ *18</li>
+                    <li>Ключ торцовый или головка *18</li>
+                    <li>Ключ торцовый или головка *21</li>
+                    <li>Ключ торцовый или головка *10</li>
+                    <li>Шестигранник*18</li>
+                    <li>Пресс</li>
+                </ol>
+                <h3>Порядок действий: </h3>
+                <ol class="rounded">
+                    <li>Поставить противооткаты</li>
+                    <li>Поднять кабину.</li>
+                    <li>Открутить подушки с 2-х сторон кабины. Можно не до конца, а только ослабить винты. Использовать
+                        шестигранник. Если этого
+                        не сделать, то потом сложно будет это сделать с передней стороны кабины. Не хватит усилия чтобы
+                        сорвать винты из-за ограниченного доступа.
+                    </li>
+                    <li>Опустить кабину.</li>
+                    <li>Защитить стекло кабины от случайных повреждений</li>
+                    <li>Зацепить кабину на мягкий строп</li>
+                    <li>Сделать натяжку</li>
+                    <li>Снять облицовку кабины 3 элемента. Элементы 1 и 2 крепятся на клипсах. Аккуратно натянуть и
+                        резким движением на себя снять. Элемент 3 крепится болтами. Один посередине в районе пальца для
+                        буксировки. Остальные по бокам.</li>
+                    <li>Открутить крепления подушки и амортизатора и всю перефирию. Основное крепление стабилизатора, по
+                        4 болта с двух сторон, в последнюю очередь. Смотреть фото. </li>
+                    <li>Снять стабилизатор</li>
+                    <li>Чтобы выбить старые втулки стабилизатора, вдавливаем немного пресом втулку с внешней стороны,
+                        что бы можно было зацепиться и вытащить стопорное кольцо.</li>
+                    <li>Выбиваем легким движением старую втулку, ударом по ней с внутренней стороны.</li>
+                    <li>Вставляем новые втулки и ставим стопорное кольцо.</li>
+                    <li>Ставим стабилизатор, подушки на место.</li>
+                    <li>Подушки, если считаете, что затянуто не достаточно прочно, можно будет протянуть после всей
+                        сборки, опрокинув кабину.</li>
+                    <li>Проверяем протяжку всех соеденений</li>
+                    <li>Ставим на место облицовку.</li>
+                    <li>Опускаем кабину</li>
+                    <li>Если нет возможности вывесить кабину, то придётся её домкратить. <b style="color: red;">Будет
+                            плач и скрежет зубов!!!)))</b></li>
+                    <li>Кабину нужно снять с замка, начав опрокидывать</li>
+                    <li>Домкраты ставим на ступеньки как на фото. Третий домкрат под кабину с левой стороны, по ходу
+                        движения.</li>
+                    <li>Дальше всё разбираем как описано выше. Достаточно просто</li>
+                    <li>Собираем как описано выше. Но уже не просто. Будет пару моментов, где будет сложно вставить
+                        болт. Но методом терпения и тыка, вы их вставите.</li>
+
+                    <br>
+                    <span class="note">ЛайфХак!!! Если не хватает пространства что бы сделать оборот воротком с
+                        головкой, то нужно снять головку, повернуть на одну грань и одеть снова на вороток.</span>
+                    <br>
+
+                </ol>
+                <h3>Полезные ссылки по теме:</h3>
+            </div>
+            <section class="gallery">
+                <div class="pic">
+                    <img src="img/content/cabin/stab_01.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_19.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_04.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_05.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_07.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_08.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_18.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_13.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_20.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_11.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_06.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_09.jpg" alt="">
+                </div>
+                <div class="pic">
+                    <img src="img/content/cabin/stab_03.jpg" alt="">
+                </div>
+
+
+            </section>
+            <div class="rightSide">
+                <h3>Реклама</h3>
+            </div>
+
+    </div>
+
+    </section>
+    </div>
+    <footer>
+        <div class="footer_content">
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Карта сайта</a></li>
+                    <li><a href="">Полезные ресурсы</a></li>
+                </ul>
+            </nav>
+
+            <div class="picture"><img src="img/truck-113.png" alt=""></div>
+
+            <div class="volvo"> <span> Website has been made in 2019 by Vladimir Shuldeshov</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Контент Конец -->
+    <script src="js/fontawesome/all.js "></script>
+    <script src="js/mymenu.js"></script>
+    <script src="js/mobmenu.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- <script src="js/script.js"></script> -->
+
 
 </body>
 
