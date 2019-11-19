@@ -31,7 +31,10 @@ li{
     position: fixed;
     left: -270px;
     top: 0;
-    display: none;
+    /* display: none; */
+    
+}
+#menu ul{
     overflow: scroll;
 }
 #menu a{
@@ -45,6 +48,8 @@ li{
 #menu li{
 padding: 16px 25px;
 border-bottom: 1px solid #333;
+display: block;
+z-index: 9999999;
 } 
 .burger_menu.moveLeft{
     left: 260px;
@@ -72,6 +77,9 @@ display: none;
         width: 320px;
         margin: auto;
     }
+    #menu ul{
+        overflow: scroll;
+    }
 }
 @media(min-width: 120px) and (max-width: 320px) {
     #menu{
@@ -92,6 +100,9 @@ display: none;
     }
     .page_title h1 {
         font-size: 35px;
+    }
+    #menu ul{
+        overflow: scroll;
     }
 }
 
