@@ -63,7 +63,8 @@ header{
 .logowrapp{
     display: flex;
     flex-basis: 400px;
-    flex-grow: 1;  
+    flex-grow: 1;
+     
 }
 .logo{ 
     width: 200px;
@@ -184,12 +185,6 @@ cursor: pointer;
         flex-grow: 1;
         
     }
-    /* .leftSide h3, .rightSide h3{
-        opacity: .2;
-    } */
-
-
-
     .infobox{
         padding: 10px;
         margin: 0 auto;
