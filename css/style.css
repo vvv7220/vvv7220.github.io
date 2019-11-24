@@ -234,7 +234,6 @@ cursor: pointer;
     margin-left: 40px; 
     min-width: 20px;
     align-items: center;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
    }
    .volvo{
     margin-top: 20px;
@@ -329,9 +328,9 @@ color: #7D7D7D;
 	transition: all 1.3s linear 0s;
 }
 .pic:hover img {
-	-webkit-transfMorgNorm: scale(1.2);
-	-moz-transform: scale(1.2);
-	transform: scale(1.2);
+	-webkit-transfMorgNorm: scale(1.08);
+	-moz-transform: scale(1.08);
+	transform: scale(1.08);
 	opacity: .6;
 }
 
