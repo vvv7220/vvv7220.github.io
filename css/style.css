@@ -67,7 +67,7 @@ header{
      
 }
 .logo{ 
-    width: 200px;
+    width: 130px;
 }
 .logo img{ 
 width: 100%;
@@ -119,7 +119,6 @@ cursor: pointer;
     background: #F3F3F3;
     display: none;
     padding: 20px;
-    /* border: 4px double #161618; */
     box-shadow: 0px 0px 10px 5px #ccc;
 }
 .tab-b a{
@@ -128,7 +127,6 @@ cursor: pointer;
     font-size: 16px; 
     cursor: pointer;
     line-height: 16px;
-    #001183
 }
 .tab-b a:hover{
     color: #001183;
@@ -210,11 +208,11 @@ cursor: pointer;
         text-shadow: 0 0 1px #001183;
     }
     footer {
-        height: 330px;
+        height: 380px;
         text-align: center;
         background: #161618;
         margin: 0 auto;
-        /* padding: 20px; */
+        padding: 20px;
     }
 .footer_content{
     display: flex;
@@ -229,7 +227,6 @@ cursor: pointer;
 .footer-nav a{
     color: #ffffff;
     margin-left: 40px; 
-    min-width: 20px;
     align-items: center;
    }
    .volvo{
@@ -472,6 +469,7 @@ img {
     }
     .infobox{
         flex-grow: 0;
+        flex-basis: auto;
     }
 }
 
@@ -501,7 +499,6 @@ img {
     }
     .logo {
         width: 60px;
-        /* display: none; */
     }
     .top_nav ul {
         flex-direction: column;
@@ -542,7 +539,11 @@ img {
     }
     .infobox{
         flex-grow: 0;
+        flex-basis: auto;
     }
+    .footer-nav li:nth-child(2){
+        display: none;
+        }
 
 }
 
@@ -573,7 +574,6 @@ img {
     }
     .logo {
         width: 40px;
-        /* display: none; */
     }
     .top_nav ul {
         flex-direction: column;
@@ -601,8 +601,11 @@ img {
     }
     .footer-nav a{
         margin-left: 10px; 
-        min-width: 20px;
         color: darkcyan;
+        font-size: 16px;
+       }
+       .footer-nav li:nth-child(2){
+       display: none;
        }
        .volvo span{
         color: darkcyan;
@@ -616,6 +619,7 @@ img {
     }
     .infobox{
         flex-grow: 0;
+        flex-basis: auto;
     }
 
 }
