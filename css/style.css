@@ -154,9 +154,10 @@ cursor: pointer;
    }
 
     .page{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 20px auto;
     min-height: 60vh;
     }
@@ -167,30 +168,29 @@ cursor: pointer;
 
         }
     .leftSide{
+
         padding: 10px;
         margin: 0 auto;
         box-shadow: 3px 0px 5px -3px #ccc;
-        /* flex-basis: calc(100% / 12 * 2 - 40px); */
-        width: 160px;
+        flex-basis: calc(100% / 12 * 2);
         background: lightblue;
-        flex-grow: 1;
+        flex-grow: 0;
     }
     .rightSide{
-       width: 160px;
         padding: 10px;
         margin: 0 auto;
         box-shadow: -3px 0px 5px -3px #ccc;
-        /* flex-basis: calc(100% / 12 * 2 - 40px); */
+        flex-basis: calc(100% / 12 * 2);
         background: lightblue;
-        flex-grow: 1;
+        flex-grow: 0;
         
     }
     .infobox{
+        max-width: 100%;
         padding: 10px;
         margin: 0 auto;
-        /* flex-basis: calc(100% / 12 * 8); */
-        /* background:lightblue; */
-        flex-grow: 0;
+        flex-basis: calc(100% / 12 * 8);
+        flex-grow: 1;
     }
     .infobox h1{
         text-align: center;
@@ -209,17 +209,6 @@ cursor: pointer;
         color: #007BCD;
         text-shadow: 0 0 1px #001183;
     }
-    .pic{
-        width: 400px;
-        margin: auto;
-    }
-    .pic img{
-        width: 100%;
-        margin: auto;
-        object-fit: cover;
-    }
-    
-
     footer {
         height: 330px;
         text-align: center;
@@ -317,16 +306,14 @@ color: #7D7D7D;
     flex-direction: column;
 }
 .pic{
-    width: 800px;
     background: #000000;
     overflow: hidden;
     margin: 20px auto;
 }
-.pic img{
+
+.pic img {
     max-width: 100%;
     object-fit: cover;
-}
-.pic img {
 	display: block;
 	width: calc(100% + 2px);
 	-webkit-transition: all 1.3s linear 0s;
@@ -426,6 +413,16 @@ img {
     .pic {
         width: 680px;
     }
+
+    .leftSide{
+        flex-grow: 1;
+    }
+    .rightSide{
+        flex-grow: 1;  
+    }
+    .infobox{
+        flex-grow: 0;
+    }
 }
 
 
@@ -467,6 +464,15 @@ img {
         font-size: 12px;
         margin: 0 10px;
     }
+    .leftSide{
+        flex-grow: 1;
+    }
+    .rightSide{
+        flex-grow: 1;  
+    }
+    .infobox{
+        flex-grow: 0;
+    }
 }
 
 @media(min-width: 320px) and (max-width: 480px) {
@@ -504,7 +510,6 @@ img {
     .pic {
         width: 267px;
 }
-    }
 
     .top_nav a{
         font-size: 12px;
@@ -528,4 +533,89 @@ img {
        .volvo span{
         color: darkcyan;
     }
+
+    .leftSide{
+        flex-grow: 1;
+    }
+    .rightSide{
+        flex-grow: 1;  
+    }
+    .infobox{
+        flex-grow: 0;
+    }
+
+}
+
+
+@media(min-width: 120px) and (max-width: 319px) {
+    ul.tabs{
+        display: none;
+    }
+    .ham_btn{
+        display: block;
+    }
+    header {
+        height: 300px;
+
+    }
+    .wrapper{
+        width: 200px;
+        margin: auto;
+    }
+    .login{
+        display: none;
+    }
+    .page_title h1.retroshadow {
+        margin: auto;
+    }
+    .logowrapp{
+        flex-direction: column;
+    }
+    .logo {
+        width: 40px;
+        /* display: none; */
+    }
+    .top_nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pic {
+        width: 180px;
+}
+.page_title h1 {
+    font-size: 25px;
+}
+    .top_nav a{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+
+    .top_nav li{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    .hum_btn{
+        display: flex;
+        position: absolute;
+        left: 0;
+    }
+    .footer-nav a{
+        margin-left: 10px; 
+        min-width: 20px;
+        color: darkcyan;
+       }
+       .volvo span{
+        color: darkcyan;
+    }
+
+    .leftSide{
+        flex-grow: 1;
+    }
+    .rightSide{
+        flex-grow: 1;  
+    }
+    .infobox{
+        flex-grow: 0;
+    }
+
 }

@@ -84,21 +84,11 @@ display: none;
     #menu{
         display: block;
     }
-    .wrapper{
-        width: 120px;
-    }
     .burger_menu{
         display: block;
         }
-
-        .pic {
-            width: 180px;
-    }
     ul.tabs{
         display: none;
-    }
-    .page_title h1 {
-        font-size: 35px;
     }
     #menu ul{
         overflow: scroll;
