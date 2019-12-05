@@ -307,7 +307,7 @@ color: #7D7D7D;
     flex-direction: column;
 }
 .pic{
-    background: #000000;
+    background: lightyellow;
     overflow: hidden;
     margin: 20px auto;
 }
@@ -324,9 +324,9 @@ color: #7D7D7D;
 	transition: all 1.3s linear 0s;
 }
 .pic:hover img {
-	-webkit-transfMorgNorm: scale(1.08);
+	/* -webkit-transfMorgNorm: scale(1.08);
 	-moz-transform: scale(1.08);
-	transform: scale(1.08);
+	transform: scale(1.08); */
 	opacity: .6;
 }
 
