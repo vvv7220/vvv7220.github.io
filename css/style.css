@@ -366,12 +366,32 @@ img {
 .note{
     font-size: 18px;
     font-weight: 600;
-    color: #000;
-    background: #fe8d0b;
-    padding: 0 5px;
+    color: rgb(65, 141, 50);
+    padding: 15px;
 }
-
-
+.danger{
+    font-size: 18px;
+    font-weight: 600;
+    color: #f00;
+    padding: 0 15px;
+}
+.alert{
+    background: #000;
+    top: 50%;
+    left: 50%;
+    margin-left: -530px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #f00;
+    padding: 0 15px;
+    animation: dangerose 1s;
+    position: fixed;
+    z-index: 999;
+}
+@keyframes dangerose {
+  from {transform: rotate(180deg);}
+   to {transform: rotate(360deg);}
+  }
 @media screen and (min-width: 1200px) {
     {{!cursor}}
 }
