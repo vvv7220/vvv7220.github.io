@@ -415,6 +415,10 @@ img {
     .top_nav ul {
         flex-grow: 0;
     }
+    .alert{
+        font-size: 28px;
+        font-weight: 600;
+    }
 }
 
 
@@ -448,6 +452,12 @@ img {
     }
     .infobox{
         flex-grow: 0;
+    }
+    .alert{
+        font-size: 20px;
+        font-weight: 600;
+        left: 50%;
+        margin-left: -380px;
     }
 }
 
@@ -499,6 +509,13 @@ img {
     .infobox{
         flex-grow: 0;
         flex-basis: auto;
+    }
+    .alert{
+        width: 460px;
+        font-size: 16px;
+        font-weight: 600;
+        left: 50%;
+        margin-left: -240px;
     }
 }
 
@@ -572,6 +589,13 @@ img {
     }
     .footer-nav li:nth-child(2){
         display: none;
+        }
+        .alert{
+            width: 320px;
+            font-size: 16px;
+            font-weight: 600;
+            left: 50%;
+            margin-left: -160px;
         }
 
 }
@@ -650,5 +674,11 @@ img {
         flex-grow: 0;
         flex-basis: auto;
     }
-
+    .alert{
+        width: 160px;
+        font-size: 16px;
+        font-weight: 600;
+        left: 50%;
+        margin-left: -80px;
+    }
 }
