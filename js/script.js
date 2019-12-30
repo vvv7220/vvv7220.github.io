@@ -17,14 +17,13 @@ function fTabs(event) {
     }
 }
 
-let danger = document.querySelector(".danger");
-let dan = document.querySelector(".dan");
+let dangerwrapp = document.querySelector(".dangerwrapp");
 document.onscroll = () => {
     if ( document.documentElement.scrollTop > 1200) {
   let div = document.createElement('div');
   div.className = "alert";
-  div.innerHTML = "Сучка!!! Вытащи ключ проворот из зацепления с маховиком двигателя!!!";
-  document.body.prepend(div);
+ div.innerHTML = "Сучка!!! Вытащи ключ проворот из зацепления с маховиком двигателя!!!";
+ dangerwrapp.prepend(div);
   setTimeout(() => div.remove(), 2000);
         }
     }
