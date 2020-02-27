@@ -318,7 +318,12 @@ color: #7D7D7D;
     max-width: 100%;
     object-fit: cover;
 }
-
+.video li{
+    background: lightyellow;
+    margin: 5px auto;
+    padding: 5px;
+    box-shadow: 0 2px 2px 0px lightblue;
+}
 
 .pic{
     height: 100%;
