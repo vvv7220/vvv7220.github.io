@@ -6,6 +6,7 @@ header{
     width: 100%;
     margin: auto;
     background: #000;
+    display: flex;
 }
 header img{
 
