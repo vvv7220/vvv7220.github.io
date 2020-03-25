@@ -1,0 +1,13 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    margin: auto;
+    background: #000;
+    display: flex;
+}
+header img{
+
+}
