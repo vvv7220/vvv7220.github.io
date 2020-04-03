@@ -1,0 +1,138 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+
+header {
+    width: 100%;
+    margin: auto;
+    background: #000;
+    display: flex;
+}
+
+.wrapper {
+    width: 1120px;
+    text-shadow: 0 2px 2px white;
+    margin: auto;
+}
+/*Оформление заголовка в шапке*/
+.slogan h1 {
+    font-family: 'Alfa Slab One';
+    line-height: 155px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    -webkit-backface-visibility: hidden;
+}
+#flash {
+    display: inline-block;
+    text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0, 0, 0, 0.8) 0 30px 25px;
+    color: hsla(0, 0%, 0%, 0);
+    outline: none;
+}
+
+.hcontent {
+    display: flex;
+    justify-content: center;
+}
+/*Оформление заголовка в шапке Конец*/
+.middle {
+    width: 100%;
+    margin: auto;
+    background: #f6f6f6;
+    position: fixed;
+}
+.mcontent{
+    display: flex;
+    
+}
+/*Menu*/
+aside {
+    width: 30%;
+    background: #f3f3f3;
+    padding: 10px;
+    height: 90vh;
+    overflow: scroll;
+    position: sticky;
+    padding-bottom: 200px;
+}
+
+/*Menu END*/
+
+
+/*Content*/
+main {
+    width: 70%;
+    height: 100vh;
+    padding: 10px;
+    position: sticky;
+    overflow: scroll;
+}
+.minwrap{
+    display: flex;
+}
+section{
+    box-shadow: 0 2px 4px 1px #333;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+section:last-child{
+     margin-bottom: 200px;
+}
+section p{
+/*    border-bottom: 1px solid black;*/
+}
+section h4{
+    background: lightgreen;
+}
+.imgcont{
+    width: 210px;
+}
+.imgcont img{
+    width: 100%;
+    object-fit: cover;
+}
+.info{
+    padding: 5px;
+}
+/*Таблицы*/
+table{
+width: 100%;
+border-collapse:collapse;
+border-spacing:0
+}
+table, td, th {
+border: 1px solid #595959;
+}
+td, th {
+padding: 3px;
+width: 30px;
+height: 35px;
+}
+th {
+background-color: #7accee;
+}
+.note{
+    background: rgba(255, 231, 255, .8);
+    padding: 5px;
+    font-weight: 600;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    margin: auto;
+}
