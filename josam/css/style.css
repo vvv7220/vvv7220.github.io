@@ -17,7 +17,7 @@ header {
 }
 
 .wrapper {
-    width: 1120px;
+    width: 1200px;
     text-shadow: 0 2px 2px white;
     margin: auto;
 }
@@ -76,6 +76,7 @@ main {
 }
 .minwrap{
     display: flex;
+    margin-bottom: 10px;
 }
 section{
     box-shadow: 0 2px 4px 1px #333;
