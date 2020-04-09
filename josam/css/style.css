@@ -48,6 +48,9 @@ header {
     background: #f6f6f6;
     position: fixed;
 }
+header.middleFixed{
+display: none;
+}
 .mcontent{
     display: flex;
     

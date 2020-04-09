@@ -7,3 +7,10 @@ $(document).ready(function(){
 		e.preventDefault();
 	})	
 });
+
+//Скролл страницы и фиксация меню
+let section = document.querySelector("main");
+let middle = document.querySelector("header");
+section.onmouseover = function(){
+middle.classList.add("middleFixed");
+}
