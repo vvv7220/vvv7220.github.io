@@ -8,9 +8,10 @@ $(document).ready(function(){
 	})	
 });
 
-//Скролл страницы и фиксация меню
-let section = document.querySelector("main");
+//Удаление шапки сайта
+let main = document.querySelector("main");
 let middle = document.querySelector("header");
-section.onmouseover = function(){
+main.onmouseover = setTimeout(removeHeader, 20000);
+function removeHeader(){
 middle.classList.add("middleFixed");
 }

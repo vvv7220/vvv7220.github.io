@@ -97,14 +97,15 @@ section h4{
     background: lightgreen;
 }
 .imgcont{
-    width: 210px;
+    min-width: 210px;
+    padding: 5px 20px;
 }
 .imgcont img{
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 .info{
-    padding: 5px;
+    padding: 5px 20px;
 }
 /*Таблицы*/
 table{
