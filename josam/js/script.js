@@ -1,3 +1,4 @@
+//меню
 $(document).ready(function(){
 	$.easing.def = "easeInOutQuad";
 	$('li.button a').click(function(e){
@@ -11,7 +12,15 @@ $(document).ready(function(){
 //Удаление шапки сайта
 let main = document.querySelector("main");
 let middle = document.querySelector("header");
-main.onmouseover = setTimeout(removeHeader, 20000);
+
+main.addEventListener('scroll', removeHeader);
 function removeHeader(){
-middle.classList.add("middleFixed");
+    let calcTop = $("main").scrollTop();
+    if(calcTop >100){
+middle.classList.add("removeHeader");
+$(".mcontent").addClass("noOpacity");
+    }
+    else{
+        middle.classList.remove("removeHeader");
+    }
 }
