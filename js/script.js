@@ -30,23 +30,23 @@ document.onscroll = () => {
 
 //Фотогаллерея
 //Скролл
-let page = document.querySelector(".page");
-let gallery = document.querySelector(".gallery");
-let footer = document.querySelector("footer");
-window.addEventListener('scroll', removeHeader);
-function removeHeader(){
-    if(pageYOffset > 80){
-page.classList.add("pagedel");
-footer.classList.add("pagedel");
-gallery.classList.add("showgal");
-    }
-    else{
-        page.classList.remove("pagedel");
-        footer.classList.remove("pagedel");
-        gallery.classList.remove("showgal");
-    }
-    
-}
+//let page = document.querySelector(".page");
+//let gallery = document.querySelector(".gallery");
+//let footer = document.querySelector("footer");
+//window.addEventListener('scroll', removeHeader);
+//function removeHeader(){
+//    if(pageYOffset > 80){
+//page.classList.add("pagedel");
+//footer.classList.add("pagedel");
+//gallery.classList.add("showgal");
+//    }
+//    else{
+//        page.classList.remove("pagedel");
+//        footer.classList.remove("pagedel");
+//        gallery.classList.remove("showgal");
+//    }
+//    
+//}
 //Увеличение картинки
 let picgal = document.querySelectorAll(".picgal");
 let showgal = document.querySelectorAll(".showgal");
