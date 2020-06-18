@@ -5,6 +5,7 @@ let pics = document.querySelectorAll(".gal-1 .pics img");
 let pic = document.querySelector(".gal-1 .pics");
 let startBtn = document.querySelector(".startBtn01");
 let stopBtn = document.querySelector(".stopBtn01");
+let sec = document.querySelector('main');
 next.onclick = nextImg;
 back.onclick = backImg;
 let i = 0;
@@ -43,7 +44,10 @@ autoS.onclick = function(){
     stopBtn.classList.add('show');
     back.classList.add("hidden");
     next.classList.add("hidden");
-    console.log("test");
+//    for(s = 0; s < sec.length; s++){
+    sec.classList.add('op');
+    console.log(sec);  
+//    }
 }
 
 
@@ -54,7 +58,7 @@ stopBtn.onclick = function(){
     stopBtn.classList.remove('show');
      back.classList.remove("hidden");
     next.classList.remove("hidden");
-    console.log("test");
+    sec.classList.remove('op');
 }
 
 //Слайдер 2
@@ -165,7 +169,6 @@ autoS3.onclick = function(){
     stopBtn03.classList.add('show');
     back3.classList.add("hidden");
     next3.classList.add("hidden");
-//    console.log("test");
 }
 
 

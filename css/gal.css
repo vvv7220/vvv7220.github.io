@@ -120,8 +120,12 @@ main{
 }
 
 .gal-1 .pics.bigPic{
-    width: 940px;
+    width: 100vw;
+    height: 100vh;
     transition: all ease 2s;
+    z-index: 999;
+    position: fixed;
+    top: -50px;
 }
 .gal-2 .pics.bigPic{
     width: 940px;
@@ -137,8 +141,13 @@ section{
     border-bottom: 2px solid #333;
     min-height: 800px;
     box-shadow: 0 0 5px 2px #333;
-    margin: 10px auto;
+    margin: 10px auto;   
 }
+main.op{
+    background: rgba(150, 185,150, 0);
+}
+
+
 .wraph{
     position: relative;
     padding-top: 50px;
@@ -181,8 +190,18 @@ section{
     line-height: 50px;
 }
 .stopBtn01.show{
+    width: 60px;
     display: block;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
+/*
+.stopBtn01.show img{
+ color: red;
+}
+*/
 .startBtn01.hidden{
   display: none;  
 }
@@ -203,10 +222,4 @@ section{
 .stopPic{
 /*    width: 100%;*/
     background: rgba(220, 12, 12, 1);
-}
-audio{
-    width: 150px;
-    height: 50px;
-    background: green;
-    margin: auto;
 }
