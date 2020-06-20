@@ -5,7 +5,10 @@ let pics = document.querySelectorAll(".gal-1 .pics img");
 let pic = document.querySelector(".gal-1 .pics");
 let startBtn = document.querySelector(".startBtn01");
 let stopBtn = document.querySelector(".stopBtn01");
-let sec = document.querySelector('main');
+let sec = document.querySelectorAll('section');
+let wraph = document.querySelector('.wraph');
+let main = document.querySelector('main');
+let header = document.querySelector('header');
 next.onclick = nextImg;
 back.onclick = backImg;
 let i = 0;
@@ -40,25 +43,34 @@ let autoSlider = function(){
 autoS.onclick = function(){
     autoSlider = setInterval(nextImg, 5000);
     pic.classList.add('bigPic');
+    wraph.classList.add('hidden');
     startBtn.classList.add('hidden');
     stopBtn.classList.add('show');
     back.classList.add("hidden");
     next.classList.add("hidden");
-//    for(s = 0; s < sec.length; s++){
-    sec.classList.add('op');
+    for(s = 0; s < sec.length; s++){
+    sec[s].classList.add('secnone');
+        }
+    header.classList.add("hidden");
+    main.classList.add('fx');
     console.log(sec);  
-//    }
+
 }
 
 
 stopBtn.onclick = function(){
     autoSlider = clearInterval(autoSlider);
     pic.classList.remove('bigPic');
+    wraph.classList.remove('hidden');
     startBtn.classList.remove('hidden');
     stopBtn.classList.remove('show');
      back.classList.remove("hidden");
     next.classList.remove("hidden");
-    sec.classList.remove('op');
+    for(s = 0; s < sec.length; s++){
+    sec[s].classList.remove('secnone');
+        }
+    main.classList.remove('fx');
+    header.classList.remove("hidden");
 }
 
 //Слайдер 2
