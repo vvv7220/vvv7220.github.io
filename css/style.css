@@ -159,7 +159,7 @@ cursor: pointer;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px auto;
-    min-height: 60vh;
+/*    min-height: 60vh;*/
     }
     .page h3{
      text-align: center;
@@ -305,6 +305,11 @@ color: #7D7D7D;
     margin: auto;
     display: flex;
     flex-direction: column;
+/*
+    z-index: 99999;
+    position: relative;
+    top: 0;
+*/
 }
 .justPic{
     width: 300px;
@@ -387,6 +392,7 @@ img {
 
 /*Галлерея*/
 /*Удаление контента при скрооле*/
+/*
 .galh{
     font-size: 70px;
     font-weight: 600;
@@ -401,7 +407,6 @@ footer.pagedel{
 }
 .gallery{
     width: 100%;
-/*    background: rgba(250, 250, 250, .5);*/
     background: #0f0;
     display: none;
 }
@@ -411,7 +416,7 @@ footer.pagedel{
     width: 100%;
 }
 .galcnt{
-/*    margin: 0 -15px;*/
+    margin: 0 -15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -452,6 +457,7 @@ footer.pagedel{
     z-index: 999;
     margin: auto;
 }
+*/
 /*
 ====================================
 ====================================
