@@ -56,6 +56,7 @@ main.fx {
     margin: auto;
     position: fixed;
     top: 190px;
+    background: red;
 }
 
 .wrapper {
@@ -173,15 +174,26 @@ footer.hidden {
 }
 
 .gal-2 .pics.bigPic {
-    width: 940px;
+    width: 80vw;
+    height: 80vh;
     -webkit-transition: all ease 2s;
     transition: all ease 2s;
+    z-index: 999;
+    position: fixed;
+    top: -50px;
 }
 
 .gal-3 .pics.bigPic {
-    width: 940px;
+    width: 80vw;
+    height: 80vh;
     -webkit-transition: all ease 2s;
     transition: all ease 2s;
+    z-index: 999;
+    position: fixed;
+    top: -50px;
+}
+body.blue{
+    background: cyan;
 }
 
 section {
@@ -272,11 +284,21 @@ main.op {
 }
 
 .stopBtn02.show {
+    width: 60px;
     display: block;
+    z-index: 9999;
+    position: absolute;
+    top: -190px;
+    right: 10px;
 }
 
 .stopBtn03.show {
+    width: 60px;
     display: block;
+    z-index: 9999;
+    position: absolute;
+    top: -190px;
+    right: 10px;
 }
 
 .startBtn02.hidden {
