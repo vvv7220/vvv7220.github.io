@@ -1,3 +1,4 @@
+//Слайдер 1
 let next = document.querySelector(".gal-1 .next");
 let back = document.querySelector(".gal-1 .back");
 let autoS = document.querySelector(".slideShow_01");
@@ -12,8 +13,6 @@ let header = document.querySelector('header');
 next.onclick = nextImg;
 back.onclick = backImg;
 let i = 0;
-//Слайдер 1
-
 //Кнопка Вперед
 function nextImg(){
     pics[i].classList.remove('showed');
@@ -74,7 +73,6 @@ stopBtn.onclick = function(){
 }
 
 //Слайдер 2
-
 let next2 = document.querySelector(".gal-2 .next");
 let back2 = document.querySelector(".gal-2 .back");
 let autoS2 = document.querySelector(".slideShow_02");
@@ -108,30 +106,42 @@ function backImg02(){
     pics2[k].classList.add('showed');
     
 }
+
 //Кнопка Слайд шоу
 let autoSlider2 = function(){
     setInterval(nextImg02, 5000);
 }
-
 autoS2.onclick = function(){
     autoSlider2 = setInterval(nextImg02, 5000);
     pic2.classList.add('bigPic');
+    wraph.classList.add('hidden');
     startBtn02.classList.add('hidden');
     stopBtn02.classList.add('show');
     back2.classList.add("hidden");
     next2.classList.add("hidden");
-    console.log("test");
+    for(s = 0; s < sec.length; s++){
+    sec[s].classList.add('secnone');
+        }
+    document.querySelector('body').classList.add("blue");
+    header.classList.add("hidden");
+    main.classList.add('fx');
+    console.log(sec);  
+
 }
-
-
 stopBtn02.onclick = function(){
-    autoSlider2 = clearInterval(autoSlider2);
+    autoSlider2 = clearInterval(autoSlider);
     pic2.classList.remove('bigPic');
+    wraph.classList.remove('hidden');
     startBtn02.classList.remove('hidden');
     stopBtn02.classList.remove('show');
      back2.classList.remove("hidden");
     next2.classList.remove("hidden");
-    console.log("test");
+    for(s = 0; s < sec.length; s++){
+    sec[s].classList.remove('secnone');
+        }
+    main.classList.remove('fx');
+    header.classList.remove("hidden");
+    document.querySelector('body').classList.remove("blue");
 }
 
 
@@ -146,8 +156,6 @@ let stopBtn03 = document.querySelector(".stopBtn03");
 next3.onclick = nextImg03;
 back3.onclick = backImg03;
 let p = 0;
-//Слайдер 1
-
 //Кнопка Вперед
 function nextImg03(){
     pics3[p].classList.remove('showed');
@@ -177,21 +185,34 @@ let autoSlider3 = function(){
 autoS3.onclick = function(){
     autoSlider3 = setInterval(nextImg03, 5000);
     pic3.classList.add('bigPic');
+    wraph.classList.add('hidden');
     startBtn03.classList.add('hidden');
     stopBtn03.classList.add('show');
     back3.classList.add("hidden");
     next3.classList.add("hidden");
+    for(s = 0; s < sec.length; s++){
+    sec[s].classList.add('secnone');
+        }
+    header.classList.add("hidden");
+    main.classList.add('fx');
+    document.querySelector('body').classList.add("blue"); 
+
 }
 
-
 stopBtn03.onclick = function(){
-    autoSlider3 = clearInterval(autoSlider3);
+    autoSlider3 = clearInterval(autoSlider);
     pic3.classList.remove('bigPic');
+    wraph.classList.remove('hidden');
     startBtn03.classList.remove('hidden');
     stopBtn03.classList.remove('show');
-     back3.classList.remove("hidden");
+    back3.classList.remove("hidden");
     next3.classList.remove("hidden");
-//    console.log("test");
+    for(s = 0; s < sec.length; s++){
+    sec[s].classList.remove('secnone');
+        }
+    main.classList.remove('fx');
+    header.classList.remove("hidden");
+    document.querySelector('body').classList.remove("blue");
 }
 
 
@@ -208,10 +229,6 @@ let m = 0;
     
 //    console.log(hpics);
 }, 5000);
-
-  
-let pl = document.querySelector('audio');
-console.log(pl);
 
 
 
