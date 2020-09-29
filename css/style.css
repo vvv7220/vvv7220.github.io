@@ -338,9 +338,11 @@ color: #7D7D7D;
     margin: 20px auto;
     transition: all 1.3s linear .2s;
 }
+/*
 .pic:hover{
     transform: scale(1.1);
 }
+*/
 .pic img {
     max-width: 100%;
     object-fit: cover;
